@@ -59,7 +59,7 @@ def execute_pre_sql(spark: SparkSession, retention_days: int,db_params: Dict[str
             conn.close()
 
 
-def read_source_data(spark: SparkSession, event_type: str, status: str, days_offset: int,db_params: Dict[str, str]) -> pd.DataFrame:
+def read_source_data(spark: SparkSession, event_type: str, status: str, days_offset: int,db_params: Dict[str, str]) :
     """Read data from source table using PySpark"""
     try:
         query = f"""

@@ -2,7 +2,6 @@ import argparse
 import logging
 from datetime import datetime, timedelta
 from typing import Dict, Any
-import pandas as pd
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import current_timestamp, lit, col
 from py4j.java_gateway import java_import
